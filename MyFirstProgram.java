@@ -1,13 +1,13 @@
 class MyFirstClass 
 {
 public static void main(String[] s) {
-MySecondClass o = new MySecondClass(10, 9);
-System.out.println(o.sum());
+MySecondClass o = new MySecondClass(9, 11);
+System.out.println(o.XOR());
 for (int i = 1; i <= 8; i++) {
 	for (int j = 1; j <= 8; j++) {
 		o.setArg1(i);
 		o.setArg2(j);
-		System.out.print(o.sum());
+		System.out.print(o.XOR());
 		System.out.print(" ");
 	}
 	System.out.println();
@@ -46,9 +46,9 @@ public int getArg2()
 return(arg2);
 }
 
-public int sum()
+public int XOR()
 {
-return(arg1+arg2);
+return(arg1^arg2);
 }
 
 }
